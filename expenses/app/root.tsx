@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import sharedStyles from "~/styles/shared.css";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -29,4 +30,8 @@ export default function App() {
       </body>
     </html>
   );
+}
+
+export function links() {
+  return [{ rel: "stylesheet", href: sharedStyles }];
 }
