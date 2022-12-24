@@ -7,7 +7,6 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import MainHeader from "~/components/navigation/MainHeader";
 import sharedStyles from "~/styles/shared.css";
 
 export const meta: MetaFunction = () => ({
@@ -34,7 +33,6 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <MainHeader />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
