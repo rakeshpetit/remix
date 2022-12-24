@@ -1,4 +1,6 @@
-const DUMMY_EXPENSES = [
+import type { Expense } from "~/types/expenses";
+
+const DUMMY_EXPENSES: Expense[] = [
   {
     id: "e1",
     title: "Toilet Paper",
